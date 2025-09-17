@@ -76,12 +76,12 @@ export default function PlanesPage() {
             <div className="text-center mb-6">
               <h3 className="text-2xl font-bold text-white mb-2">Plan Cortex</h3>
               <div className="text-3xl font-bold text-cordesa-yellow mb-2">$795/mes</div>
-              <div className="text-white/60">+ $195/mes mantenimiento (después de 3 meses)</div>
+              <div className="text-white/60">+ IVA</div>
               <div className="mt-2 px-3 py-1 bg-orange-500/20 border border-orange-500/50 rounded-full">
                 <span className="text-orange-400 text-sm font-medium">Compromiso mínimo: 3 meses</span>
               </div>
-              <div className="mt-1 px-3 py-1 bg-orange-500/10 border border-orange-500/30 rounded-full">
-                <span className="text-orange-300 text-xs">Total después de 3 meses: $990/mes + IVA</span>
+              <div className="mt-1 px-3 py-1 bg-orange-500/10 border border-orange-500/30 rounded-full">                                    
+                <span className="text-orange-300 text-xs">Después de 3 meses: $195/mes + IVA</span>                                              
               </div>
             </div>
 
@@ -197,12 +197,12 @@ export default function PlanesPage() {
               </div>
               <h3 className="text-2xl font-bold text-white mb-2">Plan Neural</h3>
               <div className="text-3xl font-bold text-cordesa-yellow mb-2">$1,495/mes</div>
-              <div className="text-white/60">+ $195/mes mantenimiento (después de 3 meses)</div>
+              <div className="text-white/60">+ IVA</div>
               <div className="mt-2 px-3 py-1 bg-cordesa-yellow/20 border border-cordesa-yellow/50 rounded-full">
                 <span className="text-cordesa-yellow text-sm font-medium">Compromiso mínimo: 6 meses</span>
               </div>
-              <div className="mt-1 px-3 py-1 bg-cordesa-yellow/10 border border-cordesa-yellow/30 rounded-full">
-                <span className="text-cordesa-yellow text-xs">Total después de 6 meses: $1,690/mes + IVA</span>
+              <div className="mt-1 px-3 py-1 bg-cordesa-yellow/10 border border-cordesa-yellow/30 rounded-full">                            
+                <span className="text-cordesa-yellow text-xs">Después de 6 meses: $395/mes + IVA</span>                                          
               </div>
             </div>
 
@@ -337,51 +337,26 @@ export default function PlanesPage() {
           </div>
         </div>
 
-        {/* Commitment Terms Section */}
-        <div className="roi-card bg-gradient-to-r from-orange-900/30 to-cordesa-yellow/30 border border-orange-500/30">
-          <div className="text-center mb-6">
-            <h3 className="text-2xl font-bold text-white mb-4">Términos de Compromiso</h3>
-
         {/* Maintenance Plans */}
-        <div className="roi-card bg-gradient-to-r from-blue-900/30 to-green-900/30 border border-blue-500/30">
-          <div className="text-center mb-6">
-            <h3 className="text-2xl font-bold text-white mb-4">Planes de Mantenimiento</h3>
-            <p className="text-white/80 text-lg">
-              Después del período mínimo de compromiso, los planes incluyen mantenimiento continuo
-            </p>
+        <div className="roi-card">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl font-bold text-white mb-4">Precios de Mantenimiento</h3>
+            <p className="text-white/80 text-lg">Después del período de compromiso mínimo:</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="text-center p-4 bg-blue-500/10 rounded-lg border border-blue-500/30">
-              <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-3">
-                <span className="text-white text-xl font-bold">C</span>
-              </div>
-              <h4 className="text-lg font-semibold text-white mb-2">Plan Cortex</h4>
-              <p className="text-white/70 text-sm mb-3">Después de 3 meses</p>
-              <div className="text-xs text-white/60">
-                <p className="mb-1">• Costo base: $795/mes</p>
-                <p className="mb-1">• Mantenimiento: $195/mes</p>
-                <p className="mb-1">• Total mensual: $990/mes</p>
-                <p className="mb-1">• Soporte por correo electrónico</p>
-                <p className="mb-1">• Actualizaciones menores</p>
-                <p>• Backup semanal</p>
-              </div>
+            <div className="text-center p-6 bg-white/5 rounded-lg border border-white/10">
+              <h4 className="text-xl font-semibold text-white mb-2">Cortex</h4>
+              <div className="text-sm text-white/60 mb-2">Después de 3 meses</div>
+              <div className="text-3xl font-bold text-cordesa-yellow mb-2">$195</div>
+              <div className="text-white/60">+ IVA</div>
             </div>
 
-            <div className="text-center p-4 bg-green-500/10 rounded-lg border border-green-500/30">
-              <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-3">
-                <span className="text-white text-xl font-bold">N</span>
-              </div>
-              <h4 className="text-lg font-semibold text-white mb-2">Plan Neural</h4>
-              <p className="text-white/70 text-sm mb-3">Después de 6 meses</p>
-              <div className="text-xs text-white/60">
-                <p className="mb-1">• Costo base: $1,495/mes</p>
-                <p className="mb-1">• Mantenimiento: $195/mes</p>
-                <p className="mb-1">• Total mensual: $1,690/mes</p>
-                <p className="mb-1">• Soporte prioritario (&lt;4h)</p>
-                <p className="mb-1">• Actualizaciones mayores</p>
-                <p>• Backup diario + monitoreo 24/7</p>
-              </div>
+            <div className="text-center p-6 bg-white/5 rounded-lg border border-white/10">
+              <h4 className="text-xl font-semibold text-white mb-2">Neural</h4>
+              <div className="text-sm text-white/60 mb-2">Después de 6 meses</div>
+              <div className="text-3xl font-bold text-cordesa-yellow mb-2">$395</div>
+              <div className="text-white/60">+ IVA</div>
             </div>
           </div>
 
@@ -406,48 +381,12 @@ export default function PlanesPage() {
               </div>
             </div>
           </div>
-        </div>            <p className="text-white/80 text-lg">
-              Los compromisos mínimos son importantes para garantizar el ROI y la estabilidad del proyecto
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div className="text-center p-4 bg-orange-500/10 rounded-lg border border-orange-500/30">
-              <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-3">
-                <span className="text-white text-xl font-bold">3</span>
-              </div>
-              <h4 className="text-lg font-semibold text-white mb-2">Plan Cortex</h4>
-              <p className="text-white/70 text-sm mb-3">Compromiso mínimo: 3 meses</p>
-              </div>
-              <div className="mt-1 px-3 py-1 bg-orange-500/10 border border-orange-500/30 rounded-full">
-                <span className="text-orange-300 text-xs">Total después de 3 meses: $990/mes + IVA</span>
-              <div className="text-xs text-white/60">
-                <p className="mb-1">• Inversión total: $2,385</p>
-                <p className="mb-1">• ROI esperado: $1,200</p>
-                <p className="mb-1">• Tiempo de recuperación: 2.0 meses</p>
-                <p>• Soporte por correo electrónico</p>
-              </div>
-            </div>
-
-            <div className="text-center p-4 bg-cordesa-yellow/10 rounded-lg border border-cordesa-yellow/30">
-              <div className="w-12 h-12 bg-cordesa-yellow rounded-full flex items-center justify-center mx-auto mb-3">
-                <span className="text-black text-xl font-bold">6</span>
-              </div>
-              <h4 className="text-lg font-semibold text-white mb-2">Plan Neural</h4>
-              <p className="text-white/70 text-sm mb-3">Compromiso mínimo: 6 meses</p>
-              </div>
-              <div className="mt-1 px-3 py-1 bg-cordesa-yellow/10 border border-cordesa-yellow/30 rounded-full">
-                <span className="text-cordesa-yellow text-xs">Total después de 6 meses: $1,690/mes + IVA</span>
-              <div className="text-xs text-white/60">
-                <p className="mb-1">• Inversión total: $8,970</p>
-                <p className="mb-1">• ROI esperado: $27,060</p>
-                <p className="mb-1">• Tiempo de recuperación: 2.0 meses</p>
-                <p>• Soporte prioritario (&lt;4h respuesta)</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-6 p-4 bg-white/10 rounded-lg">
+        </div>
+        
+        {/* Commitment Terms Section */}
+        <div className="roi-card bg-gradient-to-r from-orange-900/30 to-cordesa-yellow/30 border border-orange-500/30">
+          <div className="text-center mb-6">
+            <h3 className="text-2xl font-bold text-white mb-4">Términos de Compromiso</h3>
             <h4 className="text-lg font-semibold text-white mb-3">¿Por qué estos compromisos?</h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
               <div className="flex items-start">
