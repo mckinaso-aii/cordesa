@@ -80,7 +80,7 @@ export default function PropuestaValorPage() {
             </h4>
             <div className="space-y-3">
               {Object.entries(allDepartmentInsights)
-                .filter(([_, insight]) => insight.priority === 'alta')
+                .filter(([, insight]) => insight.priority === 'alta')
                 .slice(0, 4)
                 .map(([departmentName, insight], index) => (
                   <div key={index} className="flex justify-between items-center p-3 bg-white/5 rounded-lg">

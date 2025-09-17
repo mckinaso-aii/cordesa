@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { ArrowLeftIcon, CogIcon, CheckCircleIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { ArrowLeftIcon, CheckCircleIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 export default function PlanesPage() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)

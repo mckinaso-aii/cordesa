@@ -51,7 +51,7 @@ export default function HomePage() {
       } else {
         alert('Contraseña incorrecta')
       }
-    } catch (error) {
+    } catch {
       alert('Error de conexión')
     } finally {
       setIsLoading(false)
@@ -115,8 +115,6 @@ export default function HomePage() {
   }
 
   const totalROI = calculateTotalROI()
-  const highPriorityInsights = getHighPriorityInsights()
-  const recommendedPlan = getRecommendedPlan()
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-black via-gray-800 to-cordesa-yellow">

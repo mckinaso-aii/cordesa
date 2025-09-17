@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { ArrowLeftIcon, GlobeAltIcon, ChatBubbleLeftRightIcon, CurrencyDollarIcon, CalendarDaysIcon, CogIcon, ChartBarIcon } from '@heroicons/react/24/outline'
+import { ArrowLeftIcon, GlobeAltIcon, ChatBubbleLeftRightIcon, CogIcon } from '@heroicons/react/24/outline'
 
 export default function SitioWebPage() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -238,7 +238,7 @@ export default function SitioWebPage() {
                 <h4 className="text-lg font-semibold text-white">Consulta por WhatsApp o Chat</h4>
               </div>
               <p className="text-white/80 text-sm ml-11">
-                "Necesito cotizar un equipo para mi empresa" → IA entiende y genera cotización automática
+                &ldquo;Necesito cotizar un equipo para mi empresa&rdquo; → IA entiende y genera cotización automática
               </p>
             </div>
 
