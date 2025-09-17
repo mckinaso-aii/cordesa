@@ -408,6 +408,30 @@ export default function PlanesPage() {
             </div>
           </div>
         </div>
+
+        {/* CTA Section */}
+        <div className="roi-card bg-gradient-to-r from-cordesa-yellow/20 to-cordesa-yellow/10 border-2 border-cordesa-yellow/30">
+          <div className="text-center">
+            <h3 className="text-2xl font-bold text-white mb-4">¿Listo para Transformar tu Empresa?</h3>
+            <p className="text-white/80 text-lg mb-6 max-w-2xl mx-auto">
+              Accede a nuestros precios actualizados y descubre todas las opciones disponibles para tu empresa
+            </p>
+            <a
+              href="https://aii.cr/es/pricing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-cordesa-yellow to-cordesa-yellow-dark hover:from-cordesa-yellow-dark hover:to-cordesa-yellow text-black font-bold text-lg rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            >
+              Ver Precios Completos
+              <svg className="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+            <p className="text-white/60 text-sm mt-4">
+              Encuentra el plan perfecto para tu empresa en nuestra página oficial
+            </p>
+          </div>
+        </div>
       </main>
     </div>
   )
