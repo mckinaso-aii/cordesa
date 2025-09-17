@@ -192,8 +192,8 @@ export default function PlanesPage() {
           {/* Neural Plan */}
           <div className="roi-card border-2 border-cordesa-yellow">
             <div className="text-center mb-6">
-              <div className="inline-block bg-cordesa-yellow text-black px-3 py-1 rounded-full text-sm font-medium mb-2">
-                RECOMENDADO
+              <div className="inline-block bg-gradient-to-r from-cordesa-yellow to-yellow-400 text-black px-4 py-2 rounded-full text-sm font-bold mb-2 shadow-lg shadow-cordesa-yellow/30 border border-cordesa-yellow/50 animate-pulse">                   
+                ⭐ RECOMENDADO ⭐
               </div>
               <h3 className="text-2xl font-bold text-white mb-2">Plan Neural</h3>
               <div className="text-3xl font-bold text-cordesa-yellow mb-2">$1,495/mes</div>
