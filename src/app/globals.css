@@ -1,26 +1,172 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --foreground: #ffffff;
+  --cordesa-yellow: #FFD500;
+  --cordesa-yellow-dark: #E6C000;
+  --cordesa-white: #ffffff;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-industrial: 'Roboto', system-ui, sans-serif;
+  --font-elegant: 'Playfair Display', serif;
 }
 
 body {
-  background: var(--background);
+  background: linear-gradient(135deg, #000000 0%, #374151 50%, #FFD500 100%);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1F2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFD500;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E6C000;
+}
+
+/* Cordesa brand gradients */
+.cordesa-text {
+  background: linear-gradient(135deg, #FFD500 0%, #FFFFFF 50%, #000000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.cordesa-glow {
+  background: linear-gradient(135deg, #FFD500 0%, #E6C000 100%);
+  box-shadow: 0 0 20px rgba(255, 213, 0, 0.3), 0 0 40px rgba(230, 192, 0, 0.2);
+}
+
+/* Cordesa brand colors */
+.cordesa-yellow {
+  color: #FFD500;
+}
+
+.cordesa-yellow-bg {
+  background-color: #FFD500;
+}
+
+.cordesa-yellow-dark {
+  color: #E6C000;
+}
+
+.cordesa-yellow-dark-bg {
+  background-color: #E6C000;
+}
+
+.cordesa-gradient {
+  background: linear-gradient(90deg, #FFD500 0%, #FFE066 50%, #E6C000 100%);
+}
+
+.cordesa-duotone-gradient {
+  background: linear-gradient(135deg, #FFD500 0%, #FFFFFF 100%);
+}
+
+/* Modern glass effects */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(255, 213, 0, 0.1);
+}
+
+.glass-hover:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+/* Modern contrast effects */
+.modern-contrast {
+  background: linear-gradient(135deg, #000000 0%, #374151 50%, #FFD500 100%);
+  border: 2px solid #FFD500;
+  box-shadow: 0 10px 25px -3px rgba(255, 213, 0, 0.2), 0 4px 6px -2px rgba(230, 192, 0, 0.1);
+}
+
+.modern-glow {
+  box-shadow: 0 0 30px rgba(255, 213, 0, 0.4), 0 0 60px rgba(230, 192, 0, 0.3);
+}
+
+/* Mobile-first responsive utilities */
+@media (max-width: 768px) {
+  .mobile-padding {
+    padding: 1rem;
+  }
+  
+  .mobile-text-sm {
+    font-size: 0.875rem;
+  }
+  
+  .mobile-text-lg {
+    font-size: 1.125rem;
+  }
+}
+
+/* Chart and visualization styles */
+.chart-container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.chart-title {
+  color: #FFFFFF;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* ROI visualization styles */
+.roi-card {
+  background: linear-gradient(135deg, rgba(255, 213, 0, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 213, 0, 0.2);
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.roi-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(255, 213, 0, 0.2);
+  border: 1px solid rgba(255, 213, 0, 0.4);
+}
+
+/* Workflow visualization styles */
+.workflow-node {
+  background: linear-gradient(135deg, #FFD500 0%, #E6C000 100%);
+  border-radius: 12px;
+  padding: 1rem;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(255, 213, 0, 0.3);
+}
+
+.workflow-connection {
+  background: linear-gradient(90deg, #FFD500 0%, #FFE066 50%, #E6C000 100%);
+  height: 3px;
+  border-radius: 2px;
+  margin: 1rem 0;
 }
