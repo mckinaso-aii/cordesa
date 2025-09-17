@@ -823,6 +823,112 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
+
+            {/* Recepción Workflow */}
+            <div className="roi-card">
+              <h4 className="text-xl font-semibold text-white mb-4 text-center">Recepción - Proceso Actual vs Propuesto</h4>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div>
+                  <h5 className="text-lg font-medium text-red-400 mb-3">Proceso Actual</h5>
+                  <div className="bg-white/5 rounded-lg p-4">
+                    <MermaidChart chart={`
+                      graph TD
+                        A[Solicitud Viático] --> B[Formulario Manual Papel]
+                        B --> C[Aprobación Gerencia]
+                        C --> D[Pago Manual Efectivo]
+                        D --> E[Comprobantes Desorganizados]
+                        E --> F[Leads WhatsApp Desestructurados]
+                        F --> G[Información Perdida]
+                        
+                        style A fill:#FFD500,stroke:#fff,stroke-width:2px,color:#000
+                        style B fill:#EF4444,stroke:#fff,stroke-width:2px,color:#fff
+                        style C fill:#EF4444,stroke:#fff,stroke-width:2px,color:#fff
+                        style D fill:#EF4444,stroke:#fff,stroke-width:2px,color:#fff
+                        style E fill:#EF4444,stroke:#fff,stroke-width:2px,color:#fff
+                        style F fill:#EF4444,stroke:#fff,stroke-width:2px,color:#fff
+                        style G fill:#EF4444,stroke:#fff,stroke-width:2px,color:#fff
+                      `} />
+                  </div>
+                </div>
+                <div>
+                  <h5 className="text-lg font-medium text-green-400 mb-3">Proceso Propuesto</h5>
+                  <div className="bg-white/5 rounded-lg p-4">
+                    <MermaidChart chart={`
+                      graph TD
+                        A[Solicitud Viático] --> B[App Móvil Digital]
+                        B --> C[Workflow Aprobación Automática]
+                        C --> D[Pago Digital Trazable]
+                        D --> E[Comprobantes Digitales]
+                        E --> F[CRM Leads Estructurado]
+                        F --> G[Base Datos Centralizada]
+                        G --> H[Dashboard Recepción]
+                        
+                        style A fill:#FFD500,stroke:#fff,stroke-width:2px,color:#000
+                        style B fill:#10B981,stroke:#fff,stroke-width:2px,color:#fff
+                        style C fill:#10B981,stroke:#fff,stroke-width:2px,color:#fff
+                        style D fill:#10B981,stroke:#fff,stroke-width:2px,color:#fff
+                        style E fill:#10B981,stroke:#fff,stroke-width:2px,color:#fff
+                        style F fill:#10B981,stroke:#fff,stroke-width:2px,color:#fff
+                        style G fill:#10B981,stroke:#fff,stroke-width:2px,color:#fff
+                        style H fill:#10B981,stroke:#fff,stroke-width:2px,color:#fff
+                      `} />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Postventa Workflow */}
+            <div className="roi-card">
+              <h4 className="text-xl font-semibold text-white mb-4 text-center">Postventa - Proceso Actual vs Propuesto</h4>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div>
+                  <h5 className="text-lg font-medium text-red-400 mb-3">Proceso Actual</h5>
+                  <div className="bg-white/5 rounded-lg p-4">
+                    <MermaidChart chart={`
+                      graph TD
+                        A[Solicitud Servicio] --> B[Orden Trabajo Papel]
+                        B --> C[Asignación Manual]
+                        C --> D[Seguimiento WhatsApp]
+                        D --> E[Expedientes Físicos]
+                        E --> F[Información Desperdigada]
+                        F --> G[Sin Trazabilidad]
+                        
+                        style A fill:#FFD500,stroke:#fff,stroke-width:2px,color:#000
+                        style B fill:#EF4444,stroke:#fff,stroke-width:2px,color:#fff
+                        style C fill:#EF4444,stroke:#fff,stroke-width:2px,color:#fff
+                        style D fill:#EF4444,stroke:#fff,stroke-width:2px,color:#fff
+                        style E fill:#EF4444,stroke:#fff,stroke-width:2px,color:#fff
+                        style F fill:#EF4444,stroke:#fff,stroke-width:2px,color:#fff
+                        style G fill:#EF4444,stroke:#fff,stroke-width:2px,color:#fff
+                      `} />
+                  </div>
+                </div>
+                <div>
+                  <h5 className="text-lg font-medium text-green-400 mb-3">Proceso Propuesto</h5>
+                  <div className="bg-white/5 rounded-lg p-4">
+                    <MermaidChart chart={`
+                      graph TD
+                        A[Solicitud Servicio] --> B[Sistema Digital Órdenes]
+                        B --> C[Asignación Automática]
+                        C --> D[Seguimiento Tiempo Real]
+                        D --> E[Expedientes Digitales]
+                        E --> F[Repositorio Centralizado]
+                        F --> G[Trazabilidad Completa]
+                        G --> H[Dashboard Postventa]
+                        
+                        style A fill:#FFD500,stroke:#fff,stroke-width:2px,color:#000
+                        style B fill:#10B981,stroke:#fff,stroke-width:2px,color:#fff
+                        style C fill:#10B981,stroke:#fff,stroke-width:2px,color:#fff
+                        style D fill:#10B981,stroke:#fff,stroke-width:2px,color:#fff
+                        style E fill:#10B981,stroke:#fff,stroke-width:2px,color:#fff
+                        style F fill:#10B981,stroke:#fff,stroke-width:2px,color:#fff
+                        style G fill:#10B981,stroke:#fff,stroke-width:2px,color:#fff
+                        style H fill:#10B981,stroke:#fff,stroke-width:2px,color:#fff
+                      `} />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
